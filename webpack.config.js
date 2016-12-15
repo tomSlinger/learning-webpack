@@ -3,5 +3,15 @@ module.exports = {
     output: {
         filename: './bundle.js'
     },
-    watch: true
-}
+    watch: true,
+    module: {
+        loaders: [{
+            test: /\.js$/,
+            exclude: /node_moduels/,
+            loader: 'babel',
+            query: {
+                presets: ['es2015']
+            }
+        }],
+    }
+};
