@@ -44,7 +44,13 @@
 /* 0 */
 /***/ function(module, exports) {
 
-	console.log('Hello from Webpack');
+	'use strict';
+
+	var name = 'Tom Slinger';
+
+	setTimeout(function () {
+	  return alert('Hello there from ' + name);
+	}, 300);
 
 /***/ }
 /******/ ]);
